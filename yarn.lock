@@ -4616,6 +4616,11 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+ng-inline-svg@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/ng-inline-svg/-/ng-inline-svg-11.0.1.tgz#be1107566cbdc17533a5f9eb6662cecc1017e707"
+  integrity sha512-pJ9XdB54Qth0117v01f3arOum4uGugUxoEwF3tlHKyNTzu2rQp9Bpp92u1meIIA/7aQwspMlT64R/P4xohGr3A==
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

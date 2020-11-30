@@ -1,0 +1,27 @@
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 1px solid $black;
+    padding: 15px 240px;
+    div {
+        display: inline-block;
+    }
+    a {
+        color: $grey;
+        text-decoration: none;
+        svg {
+            fill: $fire-engine-red;
+        }
+    }
+    a:not(:first-child) {
+        margin-left: 29px;
+    }
+    a:hover {
+        color: $fire-engine-red;
+    }
+    .company a {
+        text-decoration: underline;
+    }
+}
