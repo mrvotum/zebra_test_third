@@ -1,0 +1,54 @@
+.header {
+    border-bottom: 1px solid $black;
+    padding: 30px 376px;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        display: inline-block; 
+    }
+
+    &__titles {
+        display: inline-block;
+        text-align: center;
+        .title {
+            position: relative;
+            font-family: Jost-bold;
+            &::after {
+                position: absolute;
+                content: '|';
+                right: -10px;
+            }
+        }
+        .subtitle {
+            margin-left: 10px;
+        }
+    }
+
+    &__navbar {
+        display: inline-block; 
+
+        .navbar {
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 2px;
+            border-radius: 50px;
+            background-color: $black;
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                top: 4.5px;
+                left: 0;
+                background-color: $black;
+                border-radius: 50px;
+            }
+            &::after {
+                top: -4.5px;
+            }
+        }
+    }
+}

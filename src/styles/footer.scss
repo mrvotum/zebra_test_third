@@ -1,10 +1,11 @@
 .footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     border-top: 1px solid $black;
-    padding: 15px 240px;
+    padding: 20px 240px;
     div {
         display: inline-block;
     }
@@ -23,5 +24,21 @@
     }
     .company a {
         text-decoration: underline;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        color: $grey;
+        border: 1px solid $grey;
+        border-radius: 50%;
+    }
+    .icon:not(:first-child) {
+        margin-left: 19px;
+    }
+    .icon:hover {
+        border-color: $fire-engine-red;
+        color: $fire-engine-red;
+        cursor: pointer;
     }
 }

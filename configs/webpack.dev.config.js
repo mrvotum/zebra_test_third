@@ -1,7 +1,7 @@
 const PATHS = require('./path.config.js');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
+// const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 // импортунть класс плагина очистки
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
@@ -123,16 +123,6 @@ module.exports = {
 			},
 
 			{
-				test: /\.(svg)$/,
-				loader: 'file-loader',
-				options: {
-					name: '[name].[ext]',
-					outputPath:'images/svg/',
-					emitFile: false,
-				},
-			},
-
-			{
 				test: /\.pug$/,
 				loader: 'pug-loader'
 			},
@@ -147,9 +137,9 @@ module.exports = {
 			menuConfig: config.menu
 		}),
 
-		new HtmlWebpackInlineSVGPlugin({
-			runPreEmit: true,
-		}),
+		// new HtmlWebpackInlineSVGPlugin({
+		// 	runPreEmit: true
+		// }),
 
 		new CleanWebpackPlugin(),
 
