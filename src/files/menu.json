@@ -1,0 +1,341 @@
+{
+	"menu": {
+	  "children": [
+		{
+		  "name": "profile",
+		  "title": "Компания сегодня",
+		  "children": [
+			{
+			  "name": "company",
+			  "title": "Компания сегодня"
+			},
+			{
+			  "name": "geographical",
+			  "title": "Регионы деятельности"
+			},
+			{
+			  "name": "investment-case",
+			  "title": "Инвестиционная привлекательность"
+			},
+			{
+			  "name": "2019-highlights",
+			  "title": "2019 год: итоги"
+			},
+			{
+			  "name": "address-chairman",
+			  "title": "Обращение Председателя Совета директоров"
+			}
+		  ]
+		},
+		{
+		  "name": "strategic-report",
+		  "title": "Стратегический отчет",
+		  "children": [
+			{
+			  "name": "implementation-strategy-2030",
+			  "title": "Реализация Стратегии-2030"
+			},
+			{
+			  "name": "address-ceo",
+			  "title": "Обращение Председателя Правления"
+			},
+			{
+			  "name": "market-review",
+			  "title": "Обзор рынка",
+			  "children": [
+				{
+				  "name": "global-economy",
+				  "title": "Мировая экономика"
+				}
+			  ]
+			},
+			{
+			  "name": "global-trends",
+			  "title": "Глобальные тренды и&nbsp;их влияние на&nbsp;Стратегию Компании",
+			  "shortTitle": "Глобальные тренды"
+			},
+			{
+			  "name": "strategy-2030",
+			  "title": "Стратегия-2030",
+			  "children": [
+				{
+				  "name": "focal-points",
+				  "title": "Акценты Стратегии-2030"
+				},
+				{
+				  "name": "details",
+				  "title": "Стратегия в&nbsp;деталях: ключевые события 2019 года"
+				}
+			  ]
+			},
+			{
+			  "name": "business-model",
+			  "title": "Бизнес-модель",
+			  "shortTitle": "Бизнес-модель"
+			},
+			{
+			  "name": "digital-transformation",
+			  "title": "Цифровая трансформация"
+			},
+			{
+			  "name": "operational-transformation",
+			  "title": "Операционная трансформация"
+			},
+			{
+			  "name": "organizational-transformation",
+			  "title": "Организационная трансформация"
+			},
+			{
+			  "name": "cultural-transformation",
+			  "title": "Культурная трансформация"
+			}
+		  ]
+		},
+		{
+		  "name": "performance",
+		  "title": "Обзор результатов",
+		  "children": [
+			{
+			  "name": "resource-base-production",
+			  "title": "Сырьевая база и&nbsp;добыча",
+			  "children": [
+				{
+				  "name": "resource-base",
+				  "title": "Сырьевая база"
+				},
+				{
+				  "name": "geological-prospecting",
+				  "title": "Геологоразведка и&nbsp;разработка месторождений"
+				},
+				{
+				  "name": "hydrocarbon-production",
+				  "title": "Добыча углеводородов"
+				}
+			  ]
+			},
+			{
+			  "name": "refining-manufacturing",
+			  "title": "Нефтепереработка и&nbsp;производство нефтепродуктов",
+			  "children": [
+				{
+				  "name": "value-chain",
+				  "title": "Цепочка добавленной стоимости как&nbsp;единый актив"
+				}
+			  ]
+			},
+			{
+			  "name": "distribution",
+			  "title": "Сбыт нефти, газа и&nbsp;нефтепродуктов",
+			  "children": [
+				{
+				  "name": "oil",
+				  "title": "Продажа нефти"
+				},
+				{
+				  "name": "gas",
+				  "title": "Продажа газа"
+				},
+				{
+				  "name": "petroleum-products",
+				  "title": "Продажа нефтепродуктов"
+				}
+			  ]
+			},
+			{
+			  "name": "financial-results",
+			  "title": "Финансовые результаты",
+			  "children": [
+				{
+				  "name": "ifrs",
+				  "title": "Основные показатели (МСФО)",
+				  "shortTitle": "Основные показатели"
+				},
+				{
+				  "name": "2019",
+				  "title": "Финансовые результаты 2019",
+				  "shortTitle": "Финансовые результаты"
+				}
+			  ]
+			}
+		  ]
+		},
+		{
+		  "name": "technological-development",
+		  "title": "Технологическое развитие",
+		  "children": [
+			{
+			  "name": "technological-development",
+			  "title": "Технологическое развитие"
+			},
+			{
+			  "name": "innovation-management",
+			  "title": "Управление инновациями"
+			},
+			{
+			  "name": "import-substitution",
+			  "title": "Импортозамещение"
+			}
+		  ]
+		},
+		{
+		  "name": "governance-system",
+		  "title": "Система управления",
+		  "children": [
+			{
+			  "name": "corporate-governance",
+			  "title": "Корпоративное управление",
+			  "children": [
+				{
+				  "name": "address-chairman",
+				  "title": "Обращение Председателя Совета директоров ПАО&nbsp;«Газпром нефть»",
+				  "shortTitle": "Обращение Председателя Совета директоров"
+				},
+				{
+				  "name": "practice-overview",
+				  "title": "Характеристика практики корпоративного управления"
+				},
+				{
+				  "name": "corporate-centre-role",
+				  "title": "Роль Корпоративного центра в&nbsp;совершенствовании управления дочерними компаниями",
+				  "shortTitle": "Роль Корпоративного центра"
+				},
+				{
+				  "name": "system",
+				  "title": "Система корпоративного управления"
+				},
+				{
+				  "name": "shareholders",
+				  "title": "Собрание акционеров"
+				},
+				{
+				  "name": "bod",
+				  "title": "Совет директоров"
+				},
+				{
+				  "name": "management-ceo",
+				  "title": "Правление и&nbsp;Генеральный директор"
+				},
+				{
+				  "name": "remuneration",
+				  "title": "Вознаграждение членов органов управления"
+				}
+			  ]
+			},
+			{
+			  "name": "control",
+			  "title": "Внутренний контроль и&nbsp;управление рисками",
+			  "children": [
+				{
+				  "name": "internal-control",
+				  "title": "Внутренний контроль"
+				},
+				{
+				  "name": "risk-management",
+				  "title": "Управление рисками"
+				},
+				{
+				  "name": "insurance",
+				  "title": "Страхование"
+				}
+			  ]
+			},
+			{
+			  "name": "interaction-investors",
+			  "title": "Взаимодействие с&nbsp;инвесторами и&nbsp;акционерами",
+			  "children": [
+				{
+				  "name": "share-capital",
+				  "title": "Акционерный капитал"
+				},
+				{
+				  "name": "adr",
+				  "title": "Участие в&nbsp;программе депозитарных расписок"
+				},
+				{
+				  "name": "dividend-policy",
+				  "title": "Дивидендная политика"
+				},
+				{
+				  "name": "dividend-history",
+				  "title": "Дивидендная история"
+				},
+				{
+				  "name": "debt-credit-ratings",
+				  "title": "Управление долгом и&nbsp;кредитные рейтинги"
+				},
+				{
+				  "name": "faq",
+				  "title": "Часто задаваемые вопросы инвесторов"
+				}
+			  ]
+			}
+		  ]
+		},
+		{
+		  "name": "sustainable-development",
+		  "title": "Устойчивое развитие",
+		  "children": [
+			{
+			  "name": "health-safety-environment",
+			  "title": "Производственная безопасность"
+			},
+			{
+			  "name": "environmental-safety",
+			  "title": "Экологическая безопасность",
+			  "children": [
+				{
+				  "name": "climate-impact-management",
+				  "title": "Управление воздействием на&nbsp;климат"
+				},
+				{
+				  "name": "air-protection",
+				  "title": "Охрана атмосферы"
+				},
+				{
+				  "name": "water-resources-management",
+				  "title": "Охрана водных ресурсов"
+				},
+				{
+				  "name": "waste-management-land-use",
+				  "title": "Обращение с&nbsp;отходами и&nbsp;землепользование"
+				},
+				{
+				  "name": "biodiversity-preservation",
+				  "title": "Сохранение биоразнообразия"
+				},
+				{
+				  "name": "energy-efficiency",
+				  "title": "Энергоэффективность"
+				}
+			  ]
+			},
+			{
+			  "name": "personnel-development",
+			  "title": "Развитие кадрового потенциала",
+			  "children": [
+				{
+				  "name": "incentive-system-social-support",
+				  "title": "Система мотивации и&nbsp;социальная поддержка персонала"
+				},
+				{
+				  "name": "training-development",
+				  "title": "Обучение и&nbsp;развитие персонала"
+				}
+			  ]
+			},
+			{
+			  "name": "social-policy",
+			  "title": "Социальная политика",
+			  "children": [
+				{
+				  "name": "home-town-programme",
+				  "title": "Программа социальных инвестиций «Родные города»",
+				  "shortTitle": "Программа «Родные города»"
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	}
+}

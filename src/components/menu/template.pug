@@ -1,0 +1,8 @@
+block vars
+	- var menu = menuConfig
+
+menu.menu
+	ul
+		each item in menu.children
+			li
+				a(href="#") #{item.title}

@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+.main {
+	position: relative;
+	width: 100vw;
+	height: 100%;
+	max-width: $max-site--width;
+	margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "fanda",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config ./configs/webpack.dev.config.js",
+    "build": "rm -rf cache/ dist/ && webpack --config ./configs/webpack.build.config.js",
+    "start": "webpack-dev-server --open --config ./configs/webpack.dev.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "css-loader": "^5.0.0",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "css-mqpacker": "^7.0.0",
+    "file-loader": "^6.1.1",
+    "html-webpack-inline-svg-plugin": "^2.3.0",
+    "html-webpack-plugin": "^4.5.0",
+    "js-yaml-loader": "^1.2.2",
+    "mini-css-extract-plugin": "^1.3.1",
+    "postcss": "^8.1.1",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.3",
+    "webpack": "4.44.2",
+    "webpack-bundle-analyzer": "^4.1.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.7.1"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "flexboxgrid": "^6.3.1",
+    "js-yaml": "^3.14.0"
+  }
+}

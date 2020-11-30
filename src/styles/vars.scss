@@ -1,0 +1,100 @@
+$main-font--size: 20;
+$max-site--width: 1920px;
+$max-content--width: 1440px;
+
+// colors
+$spray: #78CDD1;
+$midnight: #21303D;
+$heather: #B8BCC1;
+$water: #D0D4D7;
+$grey: #404041;
+$whisper: #E5E5E5;
+$silver: #BDBDBD;
+$border-color: #E9EAEC;
+$error: rgb(218, 112, 112);
+// @todo: Добавить цвета состояний
+
+// 300
+@font-face {
+font-family: 'Jost-light';
+src: url('./../fonts/Jost-Light.eot'); /* IE9 Compat Modes */
+src: url('./../fonts/Jost-Light.woff2') format('woff2'), /* Super Modern Browsers */
+	 url('./../fonts/Jost-Light.woff') format('woff'), /* Pretty Modern Browsers */
+	 url('./../fonts/Jost-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+// 400
+@font-face {
+font-family: 'Jost-regular';
+src: url('./../fonts/Jost-Regular.eot'); /* IE9 Compat Modes */
+src: url('./../fonts/Jost-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	 url('./../fonts/Jost-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+	 url('./../fonts/Jost-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+// 500
+@font-face {
+font-family: 'Jost-medium';
+src: url('./../fonts/Jost-Medium.eot'); /* IE9 Compat Modes */
+src: url('./../fonts/Jost-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+	 url('./../fonts/Jost-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+	 url('./../fonts/Jost-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+// 700
+@font-face {
+font-family: 'Jost-bold';
+src: url('./../fonts/Jost-Bold.eot'); /* IE9 Compat Modes */
+src: url('./../fonts/Jost-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+	 url('./../fonts/Jost-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+	 url('./../fonts/Jost-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+// mixins
+$breakpoint-xl: 1350px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-sm: 480px !default;
+$breakpoint-xs: 320px !default;
+
+$breakpoints: xl, lg, md, sm, xs;
+
+@mixin breakpoint($point) {
+	@if $point == xl {
+		@media (min-width: $breakpoint-xl) { @content; }
+	}
+	@else if $point == lg {
+		@media (max-width: $breakpoint-lg) { @content; }
+	}
+	@else if $point == md {
+		@media (max-width: $breakpoint-md) { @content; }
+	}
+	@else if $point == sm {
+		@media (max-width: $breakpoint-sm) { @content; }
+	}
+	@else if $point == xs {
+		@media (max-width: $breakpoint-xs) { @content; }
+	}
+}
+
+@mixin rem($property, $values) {
+	$px: ();
+	$rem: ();
+
+	@each $value in $values {
+
+		@if $value == 0 or $value == auto or $value == '0px' {
+			$px: append($px, $value);
+			$rem: append($rem, $value);
+		} @else {
+			$val: $value / 1px;
+
+			$px: append($px, $value);
+			$rem: append($rem, ($val / $main-font--size + rem));
+		}
+	}
+
+	@if $px == $rem {
+		#{$property}: $px;
+	} @else {
+		#{$property}: $px;
+		#{$property}: $rem;
+	}
+}

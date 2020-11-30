@@ -1,0 +1,18 @@
+block vars
+	- var menuConfig = htmlWebpackPlugin.options.menuConfig
+
+<!DOCTYPE html>
+html
+	head
+		include /includes/head.pug
+
+	//- Классы и структура layout на усмотрение разработчика
+	body
+		//- К заданию с меню присупить после выполнения всей верстки
+		//- menu.layout__menu
+		//- 	include ./components/menu/template.pug
+
+		main.main
+			//- Просто пример подключения
+			- var image = true
+			include ./components/appeal/template.pug
