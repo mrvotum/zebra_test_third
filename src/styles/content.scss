@@ -1,0 +1,57 @@
+.content {
+    width: 821px; // временно выставлю ширину для настройки
+    margin: 76px 351px;
+
+    &__title {
+        color: $blue-whale;
+        font-weight: 700;
+    }
+
+    &__lid {
+        display: block;
+        color: $fire-engine-red;
+        font-style: italic;
+        margin-top: 44px;
+        font-size: 18px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: $fire-engine-red;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 33px;
+        max-width: 537px;
+        line-height: 34px;
+    }
+
+    h3 {
+        margin-top: 28px;
+        text-transform: uppercase;
+        line-height: 28px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h4 {
+        margin-top: 20px;
+        color: $fire-engine-red;
+        line-height: 27px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    h5 {
+        margin-top: 18px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 28px;
+        font-weight: 100;
+        line-height: 26px;
+        margin: 14px 0;
+        font-size: 16px;
+    }
+}

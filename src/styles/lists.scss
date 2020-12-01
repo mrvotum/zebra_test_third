@@ -1,0 +1,53 @@
+.list {
+    /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */ 
+    counter-reset: li; 
+
+    &:not(:first-child) > li {
+        margin-top: 14px;
+    }
+
+    // чтобы первый маркер был ярче
+    &:not(:first-child) > li:before {
+        color: $black;
+        border-left-color: $black;
+    }
+
+    li {
+        position: relative;
+        margin-left: 20px;
+        margin-top: 8px;
+        line-height: 26px;
+    }
+
+    // маркированный список
+    &--marker {
+        li:before {
+            position: absolute;
+            list-style: none; 
+            content: "";
+            
+            left: -20px;
+            top: 9px;
+            border-left: 8px solid $grey;
+            border-top: 4px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+    }
+
+    &--number:not(:first-child) > li {
+        margin-left: 0;
+    }
+
+    // нумерованный список
+    &--number {
+        li:before {
+            /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+            counter-increment: li; 
+            /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+            content: counters(li,".") ". ";
+            font-weight: 700;
+            color: $grey;
+        }
+    }
+}

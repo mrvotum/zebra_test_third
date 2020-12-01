@@ -1,0 +1,79 @@
+.quote {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    
+    &::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: -1px;
+        width: 55px;
+        height: 40px;
+        background-image: url(../images/png/quote-quotes.png);
+        background-repeat: no-repeat;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        right: -1px;
+        top: -1px;
+        width: 50px;
+        height: 20px;
+        background-color: $background-color;
+    }
+
+    &__img {
+        position: relative;
+        width: 200px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+        }
+        
+        img {
+            border: 1px solid $fire-engine-red;
+        }
+    }
+
+    &__content {
+        padding: 25px 30px 30px 35px;
+        border: 1px solid $fire-engine-red;
+    }
+
+    // Если нет фотографии, то не будет и второго дочернего элемента
+    &__content:nth-child(2n) {
+        border: none;
+        border-top: 1px solid $fire-engine-red;
+    }
+
+    &-text {
+        color: $fire-engine-red;
+        display: block;
+        padding-right: 81px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &-author__holder {
+        text-align: end;
+
+        .author__name {
+            display: block;
+            font-weight: 700;
+            font-style: 18px;
+        }
+
+        .author__position {
+            display: block;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
