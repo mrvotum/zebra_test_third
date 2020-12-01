@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     width: 100%;
     border-top: 1px solid $black;
-    padding: 20px 240px;
+    padding: 1.04vw 12.5vw; // 20px 240px;
     div {
         display: inline-block;
     }
@@ -17,7 +17,7 @@
         }
     }
     a:not(:first-child) {
-        margin-left: 29px;
+        margin-left: 1.51vw; // 29px;
     }
     a:hover {
         color: $fire-engine-red;
@@ -26,15 +26,15 @@
         text-decoration: underline;
     }
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 1.56vw; // 30px;
+        height: 1.56vw; // 30px;
         box-sizing: border-box;
         color: $grey;
         border: 1px solid $grey;
         border-radius: 50%;
     }
     .icon:not(:first-child) {
-        margin-left: 19px;
+        margin-left: 0.99vw; // 19px;
     }
     .icon:hover {
         border-color: $fire-engine-red;

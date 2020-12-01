@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid $black;
-    padding: 30px 376px;
+    padding: 1.56vw 19.58vw; // 30px 376px;
     display: flex;
     justify-content: space-between;
 
@@ -9,16 +9,19 @@
     }
 
     &__titles {
-        display: inline-block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .title {
             position: relative;
             font-family: Jost-bold;
-            &::after {
-                position: absolute;
-                content: '|';
-                right: -10px;
-            }
+            border-right: 2px solid $black;
+            padding-right: 10px;
+            // &::after {
+            //     position: absolute;
+            //     content: '|';
+            //     right: -10px;
+            // }
         }
         .subtitle {
             margin-left: 10px;
@@ -26,7 +29,13 @@
     }
 
     &__navbar {
-        display: inline-block; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         .navbar {
             position: relative;
@@ -47,7 +56,7 @@
                 border-radius: 50px;
             }
             &::after {
-                top: -4.5px;
+                top: -5px;
             }
         }
     }
