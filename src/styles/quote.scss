@@ -77,3 +77,14 @@
         }
     }
 }
+
+.quote {
+    &-simple {
+        border-left: 6px solid $fire-engine-red;
+        padding-left: 28px;
+        font-style: italic;
+        color: $fire-engine-red;
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
