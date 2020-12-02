@@ -27,15 +27,6 @@
         position: relative;
         width: 200px;
 
-        &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 20px;
-        }
-        
         img {
             border: 1px solid $fire-engine-red;
         }
@@ -76,15 +67,20 @@
             font-weight: 300;
         }
     }
-}
 
-.quote {
     &-simple {
-        border-left: 6px solid $fire-engine-red;
-        padding-left: 28px;
-        font-style: italic;
-        color: $fire-engine-red;
-        line-height: 26px;
-        font-size: 18px;
+        &__text {
+            border-left: 6px solid $fire-engine-red;
+            padding-left: 28px;
+            font-style: italic;
+            color: $fire-engine-red;
+            line-height: 26px;
+            font-size: 18px;
+        }
+        
+        &__img {
+            width: 100%;
+            margin-top: 22px;
+        }
     }
 }

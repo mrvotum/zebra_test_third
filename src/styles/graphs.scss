@@ -1,0 +1,17 @@
+.graph {
+    margin-top: 40px;
+
+    &__title {
+        margin-bottom: 27px;
+
+        .title {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        .subtitle {}
+    }
+
+    &__svg {}
+}
