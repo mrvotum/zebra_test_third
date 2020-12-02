@@ -1,8 +1,14 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     border-bottom: 1px solid $black;
     padding: 1.56vw 19.58vw; // 30px 376px;
     display: flex;
     justify-content: space-between;
+    background-color: $background-color;
+    z-index: 10;
+    width: 100%;
 
     &__logo {
         display: inline-block; 

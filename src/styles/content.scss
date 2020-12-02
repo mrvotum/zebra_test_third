@@ -1,10 +1,12 @@
 .content {
-    width: 821px; // временно выставлю ширину для настройки
-    margin: 76px 351px;
+    //width: 821px; // временно выставлю ширину для настройки
+    min-width: 320px - $main-padding;
+    margin: 3.96vw 18.28vw; // 76px 351px;
 
     &__title {
         color: $blue-whale;
         font-weight: 700;
+        margin-top: calc(3.96vw + 4.69vw); // (76px + 90px); // второе число -- это высота header'а
     }
 
     &__lid {
@@ -53,5 +55,10 @@
         line-height: 26px;
         margin: 14px 0;
         font-size: 16px;
+    }
+
+    @media (max-width: 798px) {
+        margin-left: $main-padding;
+        margin-right: $main-padding;
     }
 }

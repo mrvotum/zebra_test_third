@@ -1,27 +1,6 @@
 .quote {
-    position: relative;
     display: flex;
     margin-top: 40px;
-    
-    &::after {
-        position: absolute;
-        content: '';
-        right: 0;
-        top: -1px;
-        width: 55px;
-        height: 40px;
-        background-image: url(../images/png/quote-quotes.png);
-        background-repeat: no-repeat;
-    }
-    &::before {
-        position: absolute;
-        content: '';
-        right: -1px;
-        top: -1px;
-        width: 50px;
-        height: 20px;
-        background-color: $background-color;
-    }
 
     &__img {
         position: relative;
@@ -33,8 +12,28 @@
     }
 
     &__content {
+        position: relative;
         padding: 25px 30px 30px 35px;
         border: 1px solid $fire-engine-red;
+        &::after {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: -1px;
+            width: 55px;
+            height: 40px;
+            background-image: url(../images/png/quote-quotes.png);
+            background-repeat: no-repeat;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            right: -1px;
+            top: -1px;
+            width: 50px;
+            height: 20px;
+            background-color: $background-color;
+        }
     }
 
     // Если нет фотографии, то не будет и второго дочернего элемента
@@ -81,6 +80,25 @@
         &__img {
             width: 100%;
             margin-top: 22px;
+        }
+    }
+
+    @media (max-width: 798px) {
+        flex-direction: column;
+
+        &__img {
+            position: relative;
+            width: 100%;
+    
+            img {
+                width: 100%;
+            }
+        }
+
+        // Если нет фотографии, то не будет и второго дочернего элемента
+        &__content:nth-child(2n) {
+            margin-top: -4px;
+            border: 1px solid $fire-engine-red;
         }
     }
 }
