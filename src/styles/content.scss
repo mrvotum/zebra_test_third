@@ -1,5 +1,5 @@
 .content {
-    //width: 821px; // временно выставлю ширину для настройки
+    max-width: 821px; // временно выставлю ширину для настройки
     min-width: 320px - $main-padding;
     margin: 3.96vw 18.28vw; // 76px 351px;
 
@@ -23,7 +23,6 @@
         font-size: 24px;
         font-weight: 700;
         margin-top: 33px;
-        max-width: 537px;
         line-height: 34px;
     }
 
@@ -47,6 +46,7 @@
         margin-top: 18px;
         line-height: 22px;
         font-weight: 700;
+        font-size: 16px;
     }
 
     p {

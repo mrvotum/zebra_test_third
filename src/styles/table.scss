@@ -1,0 +1,51 @@
+.table {
+    width: 100%;
+    min-width: 500px;
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 18px;
+
+    &__holder {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+        text-align: left;
+        .title {
+            font-weight: 700;
+        }
+    }
+
+    th {}
+
+    &__row {
+        border-bottom: 0.5px solid $storm-grey;
+        &:hover {
+            cursor: default;
+            background-color: rgba($fire-engine-red, 0.2);
+            color: black;
+        }
+
+        &--active {
+            background-color: $fire-engine-red;
+            color: white;
+        } 
+    }
+
+    &__caption,
+    &__total {
+        font-weight: 700;
+        border-bottom: 2px solid $fire-engine-red;
+    }   
+
+    &__cell {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: right;
+        &--align-left {
+            text-align: left;
+        }
+    }
+}
