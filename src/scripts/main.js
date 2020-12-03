@@ -13,3 +13,7 @@ window.components = {};
 import Menu from '../components/menu/index';
 window.components['Menu'] = new Menu;
 window.components['Menu'].init();
+
+import Accordion from '../components/accordion/index';
+window.components['Accordion'] = new Accordion;
+window.components['Accordion'].init();

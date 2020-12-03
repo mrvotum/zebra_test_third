@@ -25,20 +25,47 @@
     .company a {
         text-decoration: underline;
     }
-    .icon {
-        width: 1.56vw; // 30px;
-        height: 1.56vw; // 30px;
-        box-sizing: border-box;
-        color: $grey;
-        border: 1px solid $grey;
-        border-radius: 50%;
+    .social {
+        &__icon {
+            width: 1.56vw; // 30px;
+            height: 1.56vw; // 30px;
+            box-sizing: border-box;
+            color: $grey;
+            border: 1px solid $grey;
+            border-radius: 50%;
+        }
+        &__icon:not(:first-child) {
+            margin-left: 0.99vw; // 19px;
+        }
+        &__icon:hover {
+            border-color: $fire-engine-red;
+            color: $fire-engine-red;
+            cursor: pointer;
+        }
     }
-    .icon:not(:first-child) {
-        margin-left: 0.99vw; // 19px;
-    }
-    .icon:hover {
-        border-color: $fire-engine-red;
-        color: $fire-engine-red;
-        cursor: pointer;
+    
+
+    @media (max-width: 798px) {
+        flex-direction: column;
+        padding: 10px 0;
+
+        
+        .social {
+            order: 0;
+            display: flex;
+            justify-content: space-evenly;
+            &__icon {
+                border: none;
+                height: 0;
+            }
+        }
+        .links {
+            order: 1;
+            // display: flex;
+            // justify-content: space-evenly;
+        }
+        .company {
+            order: 2;
+        }
     }
 }

@@ -11,7 +11,10 @@
     width: 100%;
 
     &__logo {
-        display: inline-block; 
+        display: inline-block;
+        img {
+            width: 100%;
+        }
     }
 
     &__titles {
@@ -23,11 +26,6 @@
             font-family: Jost-bold;
             border-right: 2px solid $black;
             padding-right: 10px;
-            // &::after {
-            //     position: absolute;
-            //     content: '|';
-            //     right: -10px;
-            // }
         }
         .subtitle {
             margin-left: 10px;
@@ -63,6 +61,28 @@
             }
             &::after {
                 top: -5px;
+            }
+        }
+    }
+
+    @media (max-width: 798px) {
+        padding: 3.13vw; // 10px 0;
+        justify-content: space-evenly;
+        &__logo {
+            width: 15vw; // 48px;
+            display: flex;
+            align-items: center;
+        }
+        &__titles {
+            // justify-content: space-around;
+            flex-direction: column;
+            .title {
+                border: none;
+                padding: 0;
+            }
+            .subtitle {
+                margin: 0;
+                font-size: 3.13vw; // 10px;
             }
         }
     }

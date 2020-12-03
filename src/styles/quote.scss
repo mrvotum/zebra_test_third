@@ -104,5 +104,21 @@
             margin-top: -4px;
             border: 1px solid $fire-engine-red;
         }
+        &__content {
+            padding: 20px 65px 20px 15px;
+        }
+
+        &-text {
+            padding-right: 0;
+        }
+
+        &-author__holder {
+            margin-right: -50px;
+            padding-top: 10px;
+            .author__position {
+                margin-top: 10px;
+                padding-left: 120px;
+            }
+        }
     }
 }

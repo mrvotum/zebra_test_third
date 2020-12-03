@@ -9,7 +9,6 @@
 @import "./lists.scss";
 @import "./graphs.scss";
 @import "./table.scss";
-@import "./accordion.scss";
 
 // либы\плагины
 @import "~flexboxgrid/dist/flexboxgrid.css";
@@ -17,6 +16,7 @@
 // подключение компонентов
 // @todo: Добавить алиас
 @import "./../components/appeal/style.scss";
+@import "./../components/accordion/style.scss";
 
 // базовая разметка\настройка
 @import "./layout";

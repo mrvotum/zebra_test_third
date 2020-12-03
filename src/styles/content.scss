@@ -1,6 +1,6 @@
 .content {
-    max-width: 821px; // временно выставлю ширину для настройки
-    min-width: 320px - $main-padding;
+    max-width: 821px; // временно выставлю ширину для настройки 1440 всего целиком
+    min-width: 320px - $main-padding * 2;
     margin: 3.96vw 18.28vw; // 76px 351px;
 
     &__title {
