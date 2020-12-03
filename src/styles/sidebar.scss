@@ -1,0 +1,53 @@
+.sidebar {
+    width: 300px;
+    border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
+    height: 100%;
+    &__vrez {
+        position: absolute;
+        top: 0;
+        left: calc(100% + 5vw + 29px); // вторая цифра - правый padding контента; 3-я -- внутренний отступ sidebar'а
+        width: 270px;
+        color: $fire-engine-red;
+        font-size: 14px;
+        p {
+            line-height: 17px;
+            margin: 0;
+        }
+    
+        &--bordered {
+            border-top: 1px solid $fire-engine-red;
+            border-bottom: 1px solid $fire-engine-red;
+            p {
+                margin: 10px;
+            }
+        }
+    }
+
+    &__key-figures {
+        position: absolute;
+        top: 0;
+        left: calc(100% + 5vw + 29px); // вторая цифра - правый padding контента; 3-я -- внутренний отступ sidebar'а
+        display: flex;
+        flex-direction: column;
+        color: $blue-whale;
+        width: 300px;
+        &-number {
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 57px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &--color-red {
+            color: $fire-engine-red;
+        }
+    }
+}

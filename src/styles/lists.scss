@@ -1,6 +1,7 @@
 .list {
     /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */ 
-    counter-reset: li; 
+    counter-reset: li;
+    position: relative;
 
     &:not(:first-child) > li {
         margin-top: 14px;

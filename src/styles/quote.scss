@@ -1,6 +1,7 @@
 .quote {
     display: flex;
     margin-top: 40px;
+    position: relative;
 
     &__img {
         position: relative;
@@ -68,6 +69,7 @@
     }
 
     &-simple {
+        position: relative;
         margin-top: 40px;
         &__text {
             border-left: 6px solid $fire-engine-red;
