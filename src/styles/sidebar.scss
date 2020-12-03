@@ -1,12 +1,13 @@
 .sidebar {
-    width: 300px;
+    min-width: 150px;
+    max-width: 300px;
     border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
     height: 100%;
     &__vrez {
         position: absolute;
         top: 0;
         left: calc(100% + 5vw + 29px); // вторая цифра - правый padding контента; 3-я -- внутренний отступ sidebar'а
-        width: 270px;
+        width: 14.06vw; // 270px;
         color: $fire-engine-red;
         font-size: 14px;
         p {
@@ -30,7 +31,7 @@
         display: flex;
         flex-direction: column;
         color: $blue-whale;
-        width: 300px;
+        width: 15.63vw; // 300px;
         &-number {
             font-weight: 700;
             font-size: 46px;
@@ -49,5 +50,9 @@
         &--color-red {
             color: $fire-engine-red;
         }
+    }
+
+    @media (max-width: 798px) {
+        display: none;
     }
 }
