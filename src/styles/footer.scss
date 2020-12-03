@@ -1,6 +1,7 @@
 .footer {
     // position: absolute;
     // bottom: 0;
+    min-width: 320px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -57,15 +58,27 @@
             &__icon {
                 border: none;
                 height: 0;
+                width: auto;
+                &::before {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
             }
         }
         .links {
             order: 1;
-            // display: flex;
-            // justify-content: space-evenly;
+            display: flex;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            // a:not(:nth-child(-n + 3)) {
+            //     margin-top: 10px;
+            // }
         }
         .company {
             order: 2;
+            text-align: center;
+            margin-top: 10px;
         }
     }
 }

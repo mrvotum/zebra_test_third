@@ -9,6 +9,7 @@
     background-color: $background-color;
     z-index: 10;
     width: 100%;
+    min-width: 320px;
 
     &__logo {
         display: inline-block;

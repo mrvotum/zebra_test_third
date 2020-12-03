@@ -13,7 +13,7 @@
         display: block;
         color: $fire-engine-red;
         font-style: italic;
-        margin-top: 44px;
+        margin-top: 2.29vw; // 44px;
         font-size: 18px;
     }
 
@@ -60,5 +60,9 @@
     @media (max-width: 798px) {
         margin-left: $main-padding;
         margin-right: $main-padding;
+
+        &__title {
+            margin-top: calc(3.96vw + 14.68vw); // (76px + 90px); // второе число -- это высота header'а
+        }
     }
 }
