@@ -1,9 +1,14 @@
-<link rel="stylesheet" href="../fonts/fontello/css/fontello.css" />
+block vars
+    - url_company = '#_1'
+    - url_aboutTheReport = '#_2'
+    - url_disclaimer = '#_3'
+    - url_applications = '#_4'
+    - url_glossary = '#_5'
+    - url_contacts = '#_6'
 
 div.company
     span &#169; 2020 
-        - var url = '#';
-        a(href='/' + url) Компания
+        a(href=`/${url_company}`) Компания
 
 div.social
     span.social__icon.icon-twitter
@@ -15,13 +20,8 @@ div.social
     span.social__icon.icon-odnoklassniki
 
 div.links
-    - var url = '#';
-    a(href='/' + url) Об отчете
-    - var url = '#';
-    a(href='/' + url) Дисклеймер
-    - var url = '#';
-    a(href='/' + url) Приложения
-    - var url = '#';
-    a(href='/' + url) Глоссарий
-    - var url = '#';
-    a(href='/' + url) Контакты
+    a(href='/' + url_aboutTheReport) Об отчете
+    a(href='/' + url_disclaimer) Дисклеймер
+    a(href='/' + url_applications) Приложения
+    a(href='/' + url_glossary) Глоссарий
+    a(href='/' + url_contacts) Контакты

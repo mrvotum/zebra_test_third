@@ -37,6 +37,10 @@
             font-size: 46px;
             line-height: 57px;
         }
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
         &-title {
             font-weight: 700;
             font-size: 20px;
@@ -54,5 +58,33 @@
 
     @media (max-width: 798px) {
         display: none;
+
+        &__vrez,
+        &__key-figures {
+            position: inherit;
+            width: 100%;
+            left: 0;
+            margin-top: 10px;
+        }
+
+        &__key-figures {
+            // display: block;
+            flex-direction: row;
+            &-number {
+                order: 1;
+                // display: inline-block;
+                width: fit-content
+            }
+            &-title {
+                order: 2;
+                // display: inline-block;
+                width: fit-content
+            }
+            &-text {
+                order: 3;
+                // display: inline-block;
+                width: fit-content
+            }
+        }
     }
 }
