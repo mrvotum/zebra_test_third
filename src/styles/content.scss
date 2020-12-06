@@ -1,5 +1,5 @@
 .content {
-    max-width: 1440px; // calc(821px + 5vw + 17.08vw); // временно выставлю ширину для настройки 1440 всего целиком
+    max-width: 1250px; // calc(821px + 5vw + 17.08vw); // временно выставлю ширину для настройки 1440 всего целиком (тк 300 sidebar)
     min-width: 320px - $main-padding * 2;
     // margin: 3.96vw 18.28vw; // 76px 351px;
     padding: $header-height 5vw 2.45vw 17.08vw; // 76px 96px 47px 328px;

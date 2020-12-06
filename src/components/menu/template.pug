@@ -5,4 +5,4 @@ menu.menu
 	ul
 		each item in menu.children
 			li
-				a(href="#") #{item.title}
+				a.title__main(href="#" data-id=`${item.name}`) #{item.title}

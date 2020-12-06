@@ -1,3 +1,17 @@
 .menu {
+    margin-top: $header-height;
+    padding-top: 76px;
+    padding-left: 376px;
 
+    .title__main {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $midnight;
+        margin-bottom: 22px;
+        &:hover {
+            color: $fire-engine-red;
+        }
+    }
 }
