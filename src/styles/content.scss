@@ -19,7 +19,7 @@
         font-size: 18px;
     }
 
-    h2 {
+    .title--h2 {
         text-transform: uppercase;
         color: $fire-engine-red;
         font-size: 24px;
@@ -28,7 +28,7 @@
         line-height: 34px;
     }
 
-    h3 {
+    .title--h3 {
         margin-top: 28px;
         text-transform: uppercase;
         line-height: 28px;
@@ -36,7 +36,7 @@
         font-weight: 700;
     }
 
-    h4 {
+    .title--h4 {
         margin-top: 20px;
         color: $fire-engine-red;
         line-height: 27px;
@@ -44,14 +44,14 @@
         font-weight: 700;
     }
 
-    h5 {
+    .title--h5 {
         margin-top: 18px;
         line-height: 22px;
         font-weight: 700;
         font-size: 16px;
     }
 
-    p {
+    .text {
         margin-top: 28px;
         font-weight: 100;
         line-height: 26px;

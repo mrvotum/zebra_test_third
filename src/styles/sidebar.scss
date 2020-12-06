@@ -10,7 +10,7 @@
         width: 14.06vw; // 270px;
         color: $fire-engine-red;
         font-size: 14px;
-        p {
+        .vrez__text {
             line-height: 17px;
             margin: 0;
         }
@@ -18,8 +18,8 @@
         &--bordered {
             border-top: 1px solid $fire-engine-red;
             border-bottom: 1px solid $fire-engine-red;
-            p {
-                margin: 10px;
+            .vrez__text {
+                margin: 10px 0;
             }
         }
     }

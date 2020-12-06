@@ -7,7 +7,7 @@
         position: relative;
         width: 200px;
 
-        img {
+        .img {
             border: 1px solid $fire-engine-red;
         }
     }
@@ -83,7 +83,7 @@
         &__img {
             width: 100%;
             margin-top: 22px;
-            img {
+            .img {
                 width: 100%;
             }
         }
@@ -96,7 +96,7 @@
             position: relative;
             width: 100%;
     
-            img {
+            .img {
                 width: 100%;
             }
         }

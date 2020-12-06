@@ -10,23 +10,20 @@
     padding-top: 1.04vw;
     padding-bottom: 1.04vw;
 
-    div {
-        display: inline-block;
-    }
-    a {
+    .link {
         color: $grey;
         text-decoration: none;
         svg {
             fill: $fire-engine-red;
         }
     }
-    a:not(:first-child) {
+    .link:not(:first-child) {
         margin-left: 1.51vw; // 29px;
     }
-    a:hover {
+    .link:hover {
         color: $fire-engine-red;
     }
-    .company a {
+    .company .link {
         text-decoration: underline;
     }
     .social {
