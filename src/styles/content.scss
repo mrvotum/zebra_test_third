@@ -1,14 +1,15 @@
 .content {
-    max-width: calc(821px + 5vw + 17.08vw); // временно выставлю ширину для настройки 1440 всего целиком
+    max-width: 1440px; // calc(821px + 5vw + 17.08vw); // временно выставлю ширину для настройки 1440 всего целиком
     min-width: 320px - $main-padding * 2;
     // margin: 3.96vw 18.28vw; // 76px 351px;
-    padding: 3.96vw 5vw 2.45vw 17.08vw; // 76px 96px 47px 328px;
+    padding: $header-height 5vw 2.45vw 17.08vw; // 76px 96px 47px 328px;
     box-sizing: border-box;
 
     &__title {
         color: $blue-whale;
         font-weight: 700;
-        margin-top: 3.96vw; // (76px + 90px); // второе число -- это высота header'а
+        margin-top: 76px;
+        // margin-top: $header-width; // 3.96vw; // (76px + 90px); // второе число -- это высота header'а
     }
 
     &__lid {
