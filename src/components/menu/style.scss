@@ -19,14 +19,21 @@
         text-decoration: none;
         font-size: 16px;
         font-weight: 100;
+        color: $aubergine;
         line-height: 22px;
         &:hover {
-            color: black;
             color: $fire-engine-red;
         }
     }
 
     .test {
-        color: hotpink;
+        text-decoration: none;
+        color: $aubergine;
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 20px;
+        &:hover {
+            color: $fire-engine-red;
+        }
     }
 }

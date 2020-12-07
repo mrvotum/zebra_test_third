@@ -5,12 +5,14 @@ menu.menu
 	ul
 		each item in menu.children
 			li
-				a.title__main(href="#" data-id=`${item.name}`) #{item.title}
 				- if (item.children)
-					each itemFirstChilde in item.children
-						li
-							a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+					a.title__main(href="#" data-id=`${item.name}`) #{item.title}
+					ul
+						each itemFirstChilde in item.children
+							li
 								- if (itemFirstChilde.children)
-									each itemSecondChild in itemFirstChilde.children
-										li
-											a.test(href="#" data-id=`${itemSecondChild.name}`) #{itemSecondChild.title}
+									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+									ul
+										each itemSecondChild in itemFirstChilde.children
+											li
+												a.test(href="#" data-id=`${itemSecondChild.name}`) #{itemSecondChild.title}
