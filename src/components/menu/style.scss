@@ -1,24 +1,30 @@
 .menu {
     margin-top: $header-height;
     padding-top: 76px;
-    // padding-left: 376px;
+    padding-left: 376px;
+    padding-right: 376px;
 
     &__list {
-        display: flex;
-        flex-flow: column wrap;
-        align-content: space-between;
-        height: 900px;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        // display: flex;
+        // flex-flow: column wrap;
+        // align-content: space-between;
+        // height: 900px;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // height: 1120px;
 
         &-element {
-            width: 30%;
+            // width: 30%;
             display: block;
             height: fit-content;
 
-            &:nth-child(3n + 1) { order: 1; background-color: green;}
-            &:nth-child(3n + 2) { order: 2; background-color: hotpink; }
-            &:nth-child(3n)   { order: 3; }
+            // &:nth-child(3n + 1) { order: 1; background-color: green;}
+            // &:nth-child(3n + 2) { order: 2; background-color: hotpink; }
+            // &:nth-child(3n)   { order: 3; }
         }
         &-sublist {
             padding-top: 20px;

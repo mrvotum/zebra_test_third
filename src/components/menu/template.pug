@@ -4,22 +4,22 @@ block vars
 menu.menu
 	ul.menu__list
 		each item in menu.children
-			li.menu__list-element
-				- if (item.children)
+			- if (item.children)
+				li.menu__list-element
 					a.title__main(href="#" data-id=`${item.name}`) #{item.title}
 					ul.menu__list-sublist
 						each itemFirstChilde in item.children
-							li
-								- if (itemFirstChilde.children)
+							- if (itemFirstChilde.children)
+								li
 									a.subtitle.subtitle--with-content.subtitle--with-content--active(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
 									ul.menu__list-sublist--dippest
 										each itemSecondChild in itemFirstChilde.children
 											li
 												a.test(href="#" data-id=`${itemSecondChild.name}`) #{itemSecondChild.title}
-								- else
-									li
-										a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
-				- else
-					li
-						a.title__main(href="#" data-id=`${item.name}`) #{item.title}
+							- else
+								li
+									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+			- else
+				li.menu__list-element
+					a.title__main(href="#" data-id=`${item.name}`) #{item.title}
 								
