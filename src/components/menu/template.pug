@@ -16,3 +16,8 @@ menu.menu
 										each itemSecondChild in itemFirstChilde.children
 											li
 												a.test(href="#" data-id=`${itemSecondChild.name}`) #{itemSecondChild.title}
+								- else
+									li
+										a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+
+								
