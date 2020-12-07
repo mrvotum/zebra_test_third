@@ -2,22 +2,24 @@ block vars
 	- var menu = menuConfig
 
 menu.menu
-	ul
+	ul.menu__list
 		each item in menu.children
-			li
+			li.menu__list-element
 				- if (item.children)
 					a.title__main(href="#" data-id=`${item.name}`) #{item.title}
-					ul
+					ul.menu__list-sublist
 						each itemFirstChilde in item.children
 							li
 								- if (itemFirstChilde.children)
-									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
-									ul
+									a.subtitle.subtitle--with-content.subtitle--with-content--active(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+									ul.menu__list-sublist--dippest
 										each itemSecondChild in itemFirstChilde.children
 											li
 												a.test(href="#" data-id=`${itemSecondChild.name}`) #{itemSecondChild.title}
 								- else
 									li
 										a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
-
+				- else
+					li
+						a.title__main(href="#" data-id=`${item.name}`) #{item.title}
 								
