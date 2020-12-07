@@ -1,8 +1,16 @@
 .menu {
+    display: none;
     margin-top: $header-height;
     padding-top: 76px;
     padding-left: 19.58vw; // 376px;
     padding-right: 19.58vw; // 376px;
+
+    position: fixed;
+    overflow-y: scroll;
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
 
     &__list {
         display: flex;
@@ -136,5 +144,9 @@
                 content: none;
             }
         }
+    }
+
+    &--active {
+        display: block;
     }
 }

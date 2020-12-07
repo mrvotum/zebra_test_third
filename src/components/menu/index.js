@@ -8,6 +8,13 @@ export default class Menu {
 		} else {
 			return false;
 		}
+
+		this.burgerBtn = document.querySelector('[data-id=navbar]');
+		if (this.burgerBtn) {
+			this.addBtnListener();
+		} else {
+			return false;
+		}
 	}
 
 
@@ -23,6 +30,13 @@ export default class Menu {
 		
 				console.log(clickedElement);
 			  });
+		});
+	}
+
+	addBtnListener() {
+		this.burgerBtn.addEventListener('click', (event) => {
+			console.log('clickedElement');
+			this.menu.classList.toggle('menu--active');
 		});
 	}
 }
