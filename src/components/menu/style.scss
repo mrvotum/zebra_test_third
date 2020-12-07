@@ -49,8 +49,12 @@
             padding-top: 20px;
             padding-bottom: 50px;
             &--dippest {
+                display: none;
                 padding-top: 10px;
                 padding-bottom: 15px;
+                &--active {
+                    display: block;
+                }
             }
         }
     }
@@ -78,20 +82,21 @@
         }
 
         &--with-content {
+
             position: relative;
             &::before {
                 position: absolute;
                 content: '';
                 right: -20px;
-                bottom: 6px;
+                bottom: 3px;
                 border: 5px solid transparent;
-                border-bottom-color: $fire-engine-red;
+                border-top-color: $fire-engine-red;
             }
             &--active {
                 &::before {
-                    bottom: 3px;
+                    bottom: 6px;
                     border: 5px solid transparent;
-                    border-top-color: $fire-engine-red;
+                    border-bottom-color: $fire-engine-red;
                 }
             }
         }

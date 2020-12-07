@@ -21,16 +21,21 @@ export default class Menu {
 	addListeners() {
 		console.log('Добавляем слушателей');
 		// Основные title
-		const menuMainTitlesArr = document.getElementsByClassName('title__main');
+		const menuMainTitlesArr = document.getElementsByClassName('subtitle--with-content');
 
 		menuMainTitlesArr.forEach(element => {
 			element.addEventListener('click', (event) => {
-				const clickedElement = event.currentTarget.getAttribute('data-id');
-				// const countryNumber = parseInt(clickedElement.getAttribute('id').split('_').pop(), 10);
+				const clickedElement = event.currentTarget;
+				clickedElement.classList.toggle('subtitle--with-content--active');
 		
-				console.log(clickedElement);
-			  });
+				this.openContent(clickedElement);	
+			});
 		});
+	}
+
+	openContent(clickedElement) {
+		const content = clickedElement.nextSibling;
+		content.classList.toggle('menu__list-sublist--dippest--active');
 	}
 
 	addBtnListener() {

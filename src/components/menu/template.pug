@@ -11,11 +11,12 @@ menu.menu
 						each itemFirstChilde in item.children
 							- if (itemFirstChilde.children)
 								li
-									a.subtitle.subtitle--with-content.subtitle--with-content--active(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+									a.subtitle.subtitle--with-content(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+									//- .subtitle--with-content--active(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
 									ul.menu__list-sublist--dippest
 										each itemSecondChild in itemFirstChilde.children
 											li
-												a.test(href="#" data-id=`${itemSecondChild.name}`) #{itemSecondChild.title}
+												a.test(href="#" data-id=`${itemFirstChilde.name}`) #{itemSecondChild.title}
 							- else
 								li
 									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
