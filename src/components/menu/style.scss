@@ -95,14 +95,16 @@
         &:hover {
             cursor: pointer;
         }
+        &--is-open {
+            .menu__btn-arrow {
+                border: 5px solid transparent;
+                border-bottom-color: $fire-engine-red;
+            }
+        }
         &-arrow {
             display: block;
             border: 5px solid transparent;
             border-top-color: $fire-engine-red;
-            &--is-open {
-                border: 5px solid transparent;
-                border-bottom-color: $fire-engine-red;
-            }
         }
     }
 
