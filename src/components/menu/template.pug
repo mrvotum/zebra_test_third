@@ -4,22 +4,21 @@ block vars
 menu.menu
 	ul.menu__list
 		each item in menu.children
-			li.menu__list-element
-				a.title__main(href="#" data-id=`${item.name}`) !{item.title}
+			li.menu__item
+				a.menu__link.menu__link--title(href="#" data-id=`${item.name}`) !{item.title}
 				- if (item.children)
 					ul.menu__list-sublist
 						each itemFirstChilde in item.children
 							- if (itemFirstChilde.children)
 								li
-									//- menu__item--with-btn
-									a.subtitle.subtitle--with-content(href="#" data-id=`${itemFirstChilde.name}`) !{itemFirstChilde.title}
+									a.menu__link.menu__link--subtitle.menu__link--with-btn(href="#" data-id=`${itemFirstChilde.name}`) !{itemFirstChilde.title}
 										button.menu__btn(type="submit")
 											span.menu__btn-arrow
 									ul.menu__list-sublist--dippest
 										each itemSecondChild in itemFirstChilde.children
 											li
-												a.test(href="#" data-id=`${itemFirstChilde.name}`) !{itemSecondChild.title}
+												a.menu__link.menu__link--dippest(href="#" data-id=`${itemFirstChilde.name}`) !{itemSecondChild.title}
 							- else
 								li
-									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) !{itemFirstChilde.title}
+									a.menu__link.menu__link--subtitle(href="#" data-id=`${itemFirstChilde.name}`) !{itemFirstChilde.title}
 								

@@ -28,7 +28,7 @@ export default class Menu {
 				const clickedElement = event.currentTarget;
 				clickedElement.classList.toggle('menu__btn--active');
 				// this.changeContent(clickedElement, clickedElement.className);
-				clickedElement.children[0].classList.toggle('menu__btn-arrow--is-active');
+				clickedElement.children[0].classList.toggle('menu__btn-arrow--is-open');
 
 				this.openContent(clickedElement.parentElement);	
 			});

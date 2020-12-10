@@ -1,5 +1,5 @@
 .menu {
-    display: none;
+    // display: none;
     margin-top: $header-height;
     padding-top: 76px;
     padding-left: 19.58vw; // 376px;
@@ -28,23 +28,7 @@
             order: 2;
         }
 
-        &-element {
-            position: relative;
-            // width: 33%;
-            max-width: 370px;
-            display: block;
-            // height: fit-content;
-
-            &:nth-child(3n - 2) { order: 1; } // background-color: green;}
-            &:nth-child(3n + 2) { order: 2; } // background-color: hotpink; }
-            &:nth-child(3n) { order: 3; } // background-color: brown; }
-
-            &:nth-child(3n - 2),
-            &:nth-child(3n + 2) {
-                margin-right: 50px;
-            }
-            
-        }
+        
         &-sublist {
             padding-top: 20px;
             padding-bottom: 50px;
@@ -59,15 +43,49 @@
         }
     }
 
-    .title__main {
+    &__item {
+        position: relative;
+        // width: 33%;
+        max-width: 370px;
+        display: block;
+        // height: fit-content;
+
+        &:nth-child(3n - 2) { order: 1; } // background-color: green;}
+        &:nth-child(3n + 2) { order: 2; } // background-color: hotpink; }
+        &:nth-child(3n) { order: 3; } // background-color: brown; }
+
+        &:nth-child(3n - 2),
+        &:nth-child(3n + 2) {
+            margin-right: 50px;
+        }
+        
+    }
+
+    &__link {
         text-decoration: none;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
         color: $midnight;
         margin-bottom: 22px;
         &:hover {
             color: $fire-engine-red;
+        }
+        &--title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &--subtitle {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 100;
+            color: $aubergine;
+            line-height: 22px;
+        }
+        &--dippest {
+            text-decoration: none;
+            color: $aubergine;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: 20px;
         }
     }
 
@@ -84,34 +102,13 @@
             display: block;
             border: 5px solid transparent;
             border-top-color: $fire-engine-red;
-            &--is-active {
+            &--is-open {
                 border: 5px solid transparent;
                 border-bottom-color: $fire-engine-red;
             }
         }
     }
 
-    .subtitle {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 100;
-        color: $aubergine;
-        line-height: 22px;
-        &:hover {
-            color: $fire-engine-red;
-        }
-    }
-
-    .test {
-        text-decoration: none;
-        color: $aubergine;
-        font-size: 14px;
-        line-height: 16px;
-        margin-left: 20px;
-        &:hover {
-            color: $fire-engine-red;
-        }
-    }
 
     @media (max-width: 798px) {
         padding-left: 10px;
@@ -123,19 +120,17 @@
             &::after {
                 order: 1;
             }
-            &-element {
-                position: relative;
-                // width: 33%;
-                max-width: 370px;
-                display: block;
-                // height: fit-content;
-    
-                &:nth-child(odd) {
-                    order: 1;
-                    margin-right: 20px;
-                }
-                &:nth-child(even) { order: 2; }
+        }
+        &__item {
+            position: relative;
+            max-width: 370px;
+            display: block;
+
+            &:nth-child(odd) {
+                order: 1;
+                margin-right: 20px;
             }
+            &:nth-child(even) { order: 2; }
         }
     }
 
@@ -143,7 +138,8 @@
         &__list {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            flex-wrap: nowrap;
+            height: fit-content;
             &::before,
             &::after {
                 content: none;
