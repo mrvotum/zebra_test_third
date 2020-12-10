@@ -56,37 +56,7 @@
         }
     }
 
-    &__key-figures {
-        position: absolute;
-        top: 0;
-        left: calc(100% + 5vw + 29px); // вторая цифра - правый padding контента; 3-я -- внутренний отступ sidebar'а
-        display: flex;
-        flex-direction: column;
-        color: $blue-whale;
-        width: 15.63vw; // 300px;
-        &-number {
-            font-weight: 700;
-            font-size: 46px;
-            line-height: 57px;
-        }
-        &-content {
-            display: flex;
-            flex-direction: column;
-        }
-        &-title {
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 24px;
-        }
-        &-text {
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 20px;
-        }
-        &--color-red {
-            color: $fire-engine-red;
-        }
-    }
+    
 
     @media (max-width: 798px) {
         display: none;
@@ -114,5 +84,37 @@
                 width: fit-content
             }
         }
+    }
+}
+
+.key-figures {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5vw + 29px); // вторая цифра - правый padding контента; 3-я -- внутренний отступ sidebar'а
+    display: flex;
+    flex-direction: column;
+    color: $blue-whale;
+    width: 15.63vw; // 300px;
+    &__number {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 57px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &--color-red {
+        color: $fire-engine-red;
     }
 }
