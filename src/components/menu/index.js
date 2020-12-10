@@ -26,7 +26,7 @@ export default class Menu {
 		menuMainTitlesArr.forEach(element => {
 			element.addEventListener('click', (event) => {
 				const clickedElement = event.currentTarget;
-				clickedElement.classList.toggle('menu__btn--active');
+				// clickedElement.classList.toggle('is-active');
 				// this.changeContent(clickedElement, clickedElement.className);
 				clickedElement.children[0].classList.toggle('menu__btn-arrow--is-open');
 
@@ -45,13 +45,13 @@ export default class Menu {
 
 	openContent(clickedElement) {
 		const content = clickedElement.nextSibling;
-		content.classList.toggle('menu__list-sublist--dippest--active');
+		content.classList.toggle('is-active');
 	}
 
 	addBtnListener() {
 		this.burgerBtn.addEventListener('click', (event) => {
 			console.log('clickedElement');
-			this.menu.classList.toggle('menu--active');
+			this.menu.classList.toggle('is-active');
 		});
 	}
 }

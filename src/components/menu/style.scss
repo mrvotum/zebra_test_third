@@ -36,9 +36,6 @@
                 display: none;
                 padding-top: 10px;
                 padding-bottom: 15px;
-                &--active {
-                    display: block;
-                }
             }
         }
     }
@@ -147,7 +144,7 @@
         }
     }
 
-    &--active {
+    .is-active {
         display: block;
     }
 }
