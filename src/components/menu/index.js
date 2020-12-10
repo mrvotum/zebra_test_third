@@ -21,17 +21,27 @@ export default class Menu {
 	addListeners() {
 		console.log('Добавляем слушателей');
 		// Основные title
-		const menuMainTitlesArr = document.getElementsByClassName('subtitle--with-content');
+		const menuMainTitlesArr = document.getElementsByClassName('menu__btn');
 
 		menuMainTitlesArr.forEach(element => {
 			element.addEventListener('click', (event) => {
 				const clickedElement = event.currentTarget;
-				clickedElement.classList.toggle('subtitle--with-content--active');
-		
-				this.openContent(clickedElement);	
+				clickedElement.classList.toggle('menu__btn--active');
+				// this.changeContent(clickedElement, clickedElement.className);
+				clickedElement.children[0].classList.toggle('menu__btn-arrow--is-active');
+
+				this.openContent(clickedElement.parentElement);	
 			});
 		});
 	}
+
+	// changeContent(clickedElement, classIs) {
+	// 	if (classIs === 'menu__btn menu__btn--active') {
+	// 		clickedElement.textContent = '^';
+	// 	} else {
+	// 		clickedElement.textContent = 'v';
+	// 	}
+	// }
 
 	openContent(clickedElement) {
 		const content = clickedElement.nextSibling;

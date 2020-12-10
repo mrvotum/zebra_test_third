@@ -4,23 +4,22 @@ block vars
 menu.menu
 	ul.menu__list
 		each item in menu.children
-			- if (item.children)
-				li.menu__list-element
-					a.title__main(href="#" data-id=`${item.name}`) #{item.title}
+			li.menu__list-element
+				a.title__main(href="#" data-id=`${item.name}`) !{item.title}
+				- if (item.children)
 					ul.menu__list-sublist
 						each itemFirstChilde in item.children
 							- if (itemFirstChilde.children)
 								li
-									a.subtitle.subtitle--with-content(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
-									//- .subtitle--with-content--active(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
+									//- menu__item--with-btn
+									a.subtitle.subtitle--with-content(href="#" data-id=`${itemFirstChilde.name}`) !{itemFirstChilde.title}
+										button.menu__btn(type="submit")
+											span.menu__btn-arrow
 									ul.menu__list-sublist--dippest
 										each itemSecondChild in itemFirstChilde.children
 											li
-												a.test(href="#" data-id=`${itemFirstChilde.name}`) #{itemSecondChild.title}
+												a.test(href="#" data-id=`${itemFirstChilde.name}`) !{itemSecondChild.title}
 							- else
 								li
-									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) #{itemFirstChilde.title}
-			- else
-				li.menu__list-element
-					a.title__main(href="#" data-id=`${item.name}`) #{item.title}
+									a.subtitle(href="#" data-id=`${itemFirstChilde.name}`) !{itemFirstChilde.title}
 								

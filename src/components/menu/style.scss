@@ -71,6 +71,26 @@
         }
     }
 
+    &__btn {
+        position: relative;
+        background: none;
+        border: none;
+        outline: none;
+        color: $fire-engine-red;
+        &:hover {
+            cursor: pointer;
+        }
+        &-arrow {
+            display: block;
+            border: 5px solid transparent;
+            border-top-color: $fire-engine-red;
+            &--is-active {
+                border: 5px solid transparent;
+                border-bottom-color: $fire-engine-red;
+            }
+        }
+    }
+
     .subtitle {
         text-decoration: none;
         font-size: 16px;
@@ -79,26 +99,6 @@
         line-height: 22px;
         &:hover {
             color: $fire-engine-red;
-        }
-
-        &--with-content {
-
-            position: relative;
-            &::before {
-                position: absolute;
-                content: '';
-                right: -20px;
-                bottom: 3px;
-                border: 5px solid transparent;
-                border-top-color: $fire-engine-red;
-            }
-            &--active {
-                &::before {
-                    bottom: 6px;
-                    border: 5px solid transparent;
-                    border-bottom-color: $fire-engine-red;
-                }
-            }
         }
     }
 
